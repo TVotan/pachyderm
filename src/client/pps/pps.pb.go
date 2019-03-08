@@ -6530,9 +6530,9 @@ func (m *CronInput) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x2a
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Start.Size()))
-		n3, err := m.Start.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n3, err3 := m.Start.MarshalTo(dAtA[i:])
+		if err3 != nil {
+			return 0, err3
 		}
 		i += n3
 	}
@@ -6616,9 +6616,9 @@ func (m *Input) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Atom.Size()))
-		n4, err := m.Atom.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n4, err4 := m.Atom.MarshalTo(dAtA[i:])
+		if err4 != nil {
+			return 0, err4
 		}
 		i += n4
 	}
@@ -6650,9 +6650,9 @@ func (m *Input) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x22
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Cron.Size()))
-		n5, err := m.Cron.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n5, err5 := m.Cron.MarshalTo(dAtA[i:])
+		if err5 != nil {
+			return 0, err5
 		}
 		i += n5
 	}
@@ -6660,9 +6660,9 @@ func (m *Input) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x2a
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Git.Size()))
-		n6, err := m.Git.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n6, err6 := m.Git.MarshalTo(dAtA[i:])
+		if err6 != nil {
+			return 0, err6
 		}
 		i += n6
 	}
@@ -6670,9 +6670,9 @@ func (m *Input) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x32
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Pfs.Size()))
-		n7, err := m.Pfs.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n7, err7 := m.Pfs.MarshalTo(dAtA[i:])
+		if err7 != nil {
+			return 0, err7
 		}
 		i += n7
 	}
@@ -6701,9 +6701,9 @@ func (m *JobInput) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Commit.Size()))
-		n8, err := m.Commit.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n8, err8 := m.Commit.MarshalTo(dAtA[i:])
+		if err8 != nil {
+			return 0, err8
 		}
 		i += n8
 	}
@@ -6851,9 +6851,9 @@ func (m *Datum) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x12
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Job.Size()))
-		n9, err := m.Job.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n9, err9 := m.Job.MarshalTo(dAtA[i:])
+		if err9 != nil {
+			return 0, err9
 		}
 		i += n9
 	}
@@ -6882,9 +6882,9 @@ func (m *DatumInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Datum.Size()))
-		n10, err := m.Datum.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n10, err10 := m.Datum.MarshalTo(dAtA[i:])
+		if err10 != nil {
+			return 0, err10
 		}
 		i += n10
 	}
@@ -6897,9 +6897,9 @@ func (m *DatumInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1a
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Stats.Size()))
-		n11, err := m.Stats.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n11, err11 := m.Stats.MarshalTo(dAtA[i:])
+		if err11 != nil {
+			return 0, err11
 		}
 		i += n11
 	}
@@ -6907,9 +6907,9 @@ func (m *DatumInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x22
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.PfsState.Size()))
-		n12, err := m.PfsState.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n12, err12 := m.PfsState.MarshalTo(dAtA[i:])
+		if err12 != nil {
+			return 0, err12
 		}
 		i += n12
 	}
@@ -7000,9 +7000,9 @@ func (m *ProcessStats) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.DownloadTime.Size()))
-		n13, err := m.DownloadTime.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n13, err13 := m.DownloadTime.MarshalTo(dAtA[i:])
+		if err13 != nil {
+			return 0, err13
 		}
 		i += n13
 	}
@@ -7010,9 +7010,9 @@ func (m *ProcessStats) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x12
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.ProcessTime.Size()))
-		n14, err := m.ProcessTime.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n14, err14 := m.ProcessTime.MarshalTo(dAtA[i:])
+		if err14 != nil {
+			return 0, err14
 		}
 		i += n14
 	}
@@ -7020,9 +7020,9 @@ func (m *ProcessStats) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1a
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.UploadTime.Size()))
-		n15, err := m.UploadTime.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n15, err15 := m.UploadTime.MarshalTo(dAtA[i:])
+		if err15 != nil {
+			return 0, err15
 		}
 		i += n15
 	}
@@ -7061,9 +7061,9 @@ func (m *AggregateProcessStats) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.DownloadTime.Size()))
-		n16, err := m.DownloadTime.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n16, err16 := m.DownloadTime.MarshalTo(dAtA[i:])
+		if err16 != nil {
+			return 0, err16
 		}
 		i += n16
 	}
@@ -7071,9 +7071,9 @@ func (m *AggregateProcessStats) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x12
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.ProcessTime.Size()))
-		n17, err := m.ProcessTime.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n17, err17 := m.ProcessTime.MarshalTo(dAtA[i:])
+		if err17 != nil {
+			return 0, err17
 		}
 		i += n17
 	}
@@ -7081,9 +7081,9 @@ func (m *AggregateProcessStats) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1a
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.UploadTime.Size()))
-		n18, err := m.UploadTime.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n18, err18 := m.UploadTime.MarshalTo(dAtA[i:])
+		if err18 != nil {
+			return 0, err18
 		}
 		i += n18
 	}
@@ -7091,9 +7091,9 @@ func (m *AggregateProcessStats) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x22
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.DownloadBytes.Size()))
-		n19, err := m.DownloadBytes.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n19, err19 := m.DownloadBytes.MarshalTo(dAtA[i:])
+		if err19 != nil {
+			return 0, err19
 		}
 		i += n19
 	}
@@ -7101,9 +7101,9 @@ func (m *AggregateProcessStats) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x2a
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.UploadBytes.Size()))
-		n20, err := m.UploadBytes.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n20, err20 := m.UploadBytes.MarshalTo(dAtA[i:])
+		if err20 != nil {
+			return 0, err20
 		}
 		i += n20
 	}
@@ -7156,9 +7156,9 @@ func (m *WorkerStatus) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x22
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Started.Size()))
-		n21, err := m.Started.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n21, err21 := m.Started.MarshalTo(dAtA[i:])
+		if err21 != nil {
+			return 0, err21
 		}
 		i += n21
 	}
@@ -7166,9 +7166,9 @@ func (m *WorkerStatus) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x2a
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Stats.Size()))
-		n22, err := m.Stats.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n22, err22 := m.Stats.MarshalTo(dAtA[i:])
+		if err22 != nil {
+			return 0, err22
 		}
 		i += n22
 	}
@@ -7220,9 +7220,9 @@ func (m *ResourceSpec) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x2a
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Gpu.Size()))
-		n23, err := m.Gpu.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n23, err23 := m.Gpu.MarshalTo(dAtA[i:])
+		if err23 != nil {
+			return 0, err23
 		}
 		i += n23
 	}
@@ -7283,9 +7283,9 @@ func (m *EtcdJobInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Job.Size()))
-		n24, err := m.Job.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n24, err24 := m.Job.MarshalTo(dAtA[i:])
+		if err24 != nil {
+			return 0, err24
 		}
 		i += n24
 	}
@@ -7293,9 +7293,9 @@ func (m *EtcdJobInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x12
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Pipeline.Size()))
-		n25, err := m.Pipeline.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n25, err25 := m.Pipeline.MarshalTo(dAtA[i:])
+		if err25 != nil {
+			return 0, err25
 		}
 		i += n25
 	}
@@ -7303,9 +7303,9 @@ func (m *EtcdJobInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1a
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.OutputCommit.Size()))
-		n26, err := m.OutputCommit.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n26, err26 := m.OutputCommit.MarshalTo(dAtA[i:])
+		if err26 != nil {
+			return 0, err26
 		}
 		i += n26
 	}
@@ -7338,9 +7338,9 @@ func (m *EtcdJobInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x4a
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Stats.Size()))
-		n27, err := m.Stats.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n27, err27 := m.Stats.MarshalTo(dAtA[i:])
+		if err27 != nil {
+			return 0, err27
 		}
 		i += n27
 	}
@@ -7348,9 +7348,9 @@ func (m *EtcdJobInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x52
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.StatsCommit.Size()))
-		n28, err := m.StatsCommit.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n28, err28 := m.StatsCommit.MarshalTo(dAtA[i:])
+		if err28 != nil {
+			return 0, err28
 		}
 		i += n28
 	}
@@ -7369,9 +7369,9 @@ func (m *EtcdJobInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x6a
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Started.Size()))
-		n29, err := m.Started.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n29, err29 := m.Started.MarshalTo(dAtA[i:])
+		if err29 != nil {
+			return 0, err29
 		}
 		i += n29
 	}
@@ -7379,9 +7379,9 @@ func (m *EtcdJobInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x72
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Finished.Size()))
-		n30, err := m.Finished.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n30, err30 := m.Finished.MarshalTo(dAtA[i:])
+		if err30 != nil {
+			return 0, err30
 		}
 		i += n30
 	}
@@ -7410,9 +7410,9 @@ func (m *JobInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Job.Size()))
-		n31, err := m.Job.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n31, err31 := m.Job.MarshalTo(dAtA[i:])
+		if err31 != nil {
+			return 0, err31
 		}
 		i += n31
 	}
@@ -7420,9 +7420,9 @@ func (m *JobInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x12
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Transform.Size()))
-		n32, err := m.Transform.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n32, err32 := m.Transform.MarshalTo(dAtA[i:])
+		if err32 != nil {
+			return 0, err32
 		}
 		i += n32
 	}
@@ -7430,9 +7430,9 @@ func (m *JobInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1a
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Pipeline.Size()))
-		n33, err := m.Pipeline.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n33, err33 := m.Pipeline.MarshalTo(dAtA[i:])
+		if err33 != nil {
+			return 0, err33
 		}
 		i += n33
 	}
@@ -7440,9 +7440,9 @@ func (m *JobInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x32
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.ParentJob.Size()))
-		n34, err := m.ParentJob.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n34, err34 := m.ParentJob.MarshalTo(dAtA[i:])
+		if err34 != nil {
+			return 0, err34
 		}
 		i += n34
 	}
@@ -7450,9 +7450,9 @@ func (m *JobInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x3a
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Started.Size()))
-		n35, err := m.Started.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n35, err35 := m.Started.MarshalTo(dAtA[i:])
+		if err35 != nil {
+			return 0, err35
 		}
 		i += n35
 	}
@@ -7460,9 +7460,9 @@ func (m *JobInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x42
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Finished.Size()))
-		n36, err := m.Finished.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n36, err36 := m.Finished.MarshalTo(dAtA[i:])
+		if err36 != nil {
+			return 0, err36
 		}
 		i += n36
 	}
@@ -7470,9 +7470,9 @@ func (m *JobInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x4a
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.OutputCommit.Size()))
-		n37, err := m.OutputCommit.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n37, err37 := m.OutputCommit.MarshalTo(dAtA[i:])
+		if err37 != nil {
+			return 0, err37
 		}
 		i += n37
 	}
@@ -7485,9 +7485,9 @@ func (m *JobInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x62
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.ParallelismSpec.Size()))
-		n38, err := m.ParallelismSpec.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n38, err38 := m.ParallelismSpec.MarshalTo(dAtA[i:])
+		if err38 != nil {
+			return 0, err38
 		}
 		i += n38
 	}
@@ -7500,9 +7500,9 @@ func (m *JobInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x72
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Service.Size()))
-		n39, err := m.Service.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n39, err39 := m.Service.MarshalTo(dAtA[i:])
+		if err39 != nil {
+			return 0, err39
 		}
 		i += n39
 	}
@@ -7510,9 +7510,9 @@ func (m *JobInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x7a
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Egress.Size()))
-		n40, err := m.Egress.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n40, err40 := m.Egress.MarshalTo(dAtA[i:])
+		if err40 != nil {
+			return 0, err40
 		}
 		i += n40
 	}
@@ -7530,9 +7530,9 @@ func (m *JobInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.OutputRepo.Size()))
-		n41, err := m.OutputRepo.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n41, err41 := m.OutputRepo.MarshalTo(dAtA[i:])
+		if err41 != nil {
+			return 0, err41
 		}
 		i += n41
 	}
@@ -7577,9 +7577,9 @@ func (m *JobInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.ResourceRequests.Size()))
-		n42, err := m.ResourceRequests.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n42, err42 := m.ResourceRequests.MarshalTo(dAtA[i:])
+		if err42 != nil {
+			return 0, err42
 		}
 		i += n42
 	}
@@ -7589,9 +7589,9 @@ func (m *JobInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Input.Size()))
-		n43, err := m.Input.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n43, err43 := m.Input.MarshalTo(dAtA[i:])
+		if err43 != nil {
+			return 0, err43
 		}
 		i += n43
 	}
@@ -7601,9 +7601,9 @@ func (m *JobInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.NewBranch.Size()))
-		n44, err := m.NewBranch.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n44, err44 := m.NewBranch.MarshalTo(dAtA[i:])
+		if err44 != nil {
+			return 0, err44
 		}
 		i += n44
 	}
@@ -7613,9 +7613,9 @@ func (m *JobInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.StatsCommit.Size()))
-		n45, err := m.StatsCommit.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n45, err45 := m.StatsCommit.MarshalTo(dAtA[i:])
+		if err45 != nil {
+			return 0, err45
 		}
 		i += n45
 	}
@@ -7632,9 +7632,9 @@ func (m *JobInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Stats.Size()))
-		n46, err := m.Stats.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n46, err46 := m.Stats.MarshalTo(dAtA[i:])
+		if err46 != nil {
+			return 0, err46
 		}
 		i += n46
 	}
@@ -7684,9 +7684,9 @@ func (m *JobInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x2
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.ResourceLimits.Size()))
-		n47, err := m.ResourceLimits.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n47, err47 := m.ResourceLimits.MarshalTo(dAtA[i:])
+		if err47 != nil {
+			return 0, err47
 		}
 		i += n47
 	}
@@ -7696,9 +7696,9 @@ func (m *JobInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x2
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.ChunkSpec.Size()))
-		n48, err := m.ChunkSpec.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n48, err48 := m.ChunkSpec.MarshalTo(dAtA[i:])
+		if err48 != nil {
+			return 0, err48
 		}
 		i += n48
 	}
@@ -7708,9 +7708,9 @@ func (m *JobInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x2
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.DatumTimeout.Size()))
-		n49, err := m.DatumTimeout.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n49, err49 := m.DatumTimeout.MarshalTo(dAtA[i:])
+		if err49 != nil {
+			return 0, err49
 		}
 		i += n49
 	}
@@ -7720,9 +7720,9 @@ func (m *JobInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x2
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.JobTimeout.Size()))
-		n50, err := m.JobTimeout.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n50, err50 := m.JobTimeout.MarshalTo(dAtA[i:])
+		if err50 != nil {
+			return 0, err50
 		}
 		i += n50
 	}
@@ -7746,9 +7746,9 @@ func (m *JobInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x2
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.SchedulingSpec.Size()))
-		n51, err := m.SchedulingSpec.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n51, err51 := m.SchedulingSpec.MarshalTo(dAtA[i:])
+		if err51 != nil {
+			return 0, err51
 		}
 		i += n51
 	}
@@ -7774,9 +7774,9 @@ func (m *JobInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x2
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Spout.Size()))
-		n52, err := m.Spout.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n52, err52 := m.Spout.MarshalTo(dAtA[i:])
+		if err52 != nil {
+			return 0, err52
 		}
 		i += n52
 	}
@@ -7897,9 +7897,9 @@ func (m *PipelineInput) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Repo.Size()))
-		n53, err := m.Repo.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n53, err53 := m.Repo.MarshalTo(dAtA[i:])
+		if err53 != nil {
+			return 0, err53
 		}
 		i += n53
 	}
@@ -7935,9 +7935,9 @@ func (m *PipelineInput) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x32
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.From.Size()))
-		n54, err := m.From.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n54, err54 := m.From.MarshalTo(dAtA[i:])
+		if err54 != nil {
+			return 0, err54
 		}
 		i += n54
 	}
@@ -7971,9 +7971,9 @@ func (m *EtcdPipelineInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x12
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.SpecCommit.Size()))
-		n55, err := m.SpecCommit.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n55, err55 := m.SpecCommit.MarshalTo(dAtA[i:])
+		if err55 != nil {
+			return 0, err55
 		}
 		i += n55
 	}
@@ -8034,9 +8034,9 @@ func (m *PipelineInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Pipeline.Size()))
-		n56, err := m.Pipeline.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n56, err56 := m.Pipeline.MarshalTo(dAtA[i:])
+		if err56 != nil {
+			return 0, err56
 		}
 		i += n56
 	}
@@ -8044,9 +8044,9 @@ func (m *PipelineInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x12
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Transform.Size()))
-		n57, err := m.Transform.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n57, err57 := m.Transform.MarshalTo(dAtA[i:])
+		if err57 != nil {
+			return 0, err57
 		}
 		i += n57
 	}
@@ -8054,9 +8054,9 @@ func (m *PipelineInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x32
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.CreatedAt.Size()))
-		n58, err := m.CreatedAt.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n58, err58 := m.CreatedAt.MarshalTo(dAtA[i:])
+		if err58 != nil {
+			return 0, err58
 		}
 		i += n58
 	}
@@ -8090,9 +8090,9 @@ func (m *PipelineInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x52
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.ParallelismSpec.Size()))
-		n59, err := m.ParallelismSpec.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n59, err59 := m.ParallelismSpec.MarshalTo(dAtA[i:])
+		if err59 != nil {
+			return 0, err59
 		}
 		i += n59
 	}
@@ -8105,9 +8105,9 @@ func (m *PipelineInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x7a
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Egress.Size()))
-		n60, err := m.Egress.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n60, err60 := m.Egress.MarshalTo(dAtA[i:])
+		if err60 != nil {
+			return 0, err60
 		}
 		i += n60
 	}
@@ -8133,9 +8133,9 @@ func (m *PipelineInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.ScaleDownThreshold.Size()))
-		n61, err := m.ScaleDownThreshold.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n61, err61 := m.ScaleDownThreshold.MarshalTo(dAtA[i:])
+		if err61 != nil {
+			return 0, err61
 		}
 		i += n61
 	}
@@ -8145,9 +8145,9 @@ func (m *PipelineInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.ResourceRequests.Size()))
-		n62, err := m.ResourceRequests.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n62, err62 := m.ResourceRequests.MarshalTo(dAtA[i:])
+		if err62 != nil {
+			return 0, err62
 		}
 		i += n62
 	}
@@ -8157,9 +8157,9 @@ func (m *PipelineInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Input.Size()))
-		n63, err := m.Input.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n63, err63 := m.Input.MarshalTo(dAtA[i:])
+		if err63 != nil {
+			return 0, err63
 		}
 		i += n63
 	}
@@ -8232,9 +8232,9 @@ func (m *PipelineInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Service.Size()))
-		n64, err := m.Service.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n64, err64 := m.Service.MarshalTo(dAtA[i:])
+		if err64 != nil {
+			return 0, err64
 		}
 		i += n64
 	}
@@ -8244,9 +8244,9 @@ func (m *PipelineInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.ResourceLimits.Size()))
-		n65, err := m.ResourceLimits.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n65, err65 := m.ResourceLimits.MarshalTo(dAtA[i:])
+		if err65 != nil {
+			return 0, err65
 		}
 		i += n65
 	}
@@ -8256,9 +8256,9 @@ func (m *PipelineInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x2
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.ChunkSpec.Size()))
-		n66, err := m.ChunkSpec.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n66, err66 := m.ChunkSpec.MarshalTo(dAtA[i:])
+		if err66 != nil {
+			return 0, err66
 		}
 		i += n66
 	}
@@ -8268,9 +8268,9 @@ func (m *PipelineInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x2
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.DatumTimeout.Size()))
-		n67, err := m.DatumTimeout.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n67, err67 := m.DatumTimeout.MarshalTo(dAtA[i:])
+		if err67 != nil {
+			return 0, err67
 		}
 		i += n67
 	}
@@ -8280,9 +8280,9 @@ func (m *PipelineInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x2
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.JobTimeout.Size()))
-		n68, err := m.JobTimeout.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n68, err68 := m.JobTimeout.MarshalTo(dAtA[i:])
+		if err68 != nil {
+			return 0, err68
 		}
 		i += n68
 	}
@@ -8300,9 +8300,9 @@ func (m *PipelineInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x2
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.SpecCommit.Size()))
-		n69, err := m.SpecCommit.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n69, err69 := m.SpecCommit.MarshalTo(dAtA[i:])
+		if err69 != nil {
+			return 0, err69
 		}
 		i += n69
 	}
@@ -8343,9 +8343,9 @@ func (m *PipelineInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x2
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.SchedulingSpec.Size()))
-		n70, err := m.SchedulingSpec.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n70, err70 := m.SchedulingSpec.MarshalTo(dAtA[i:])
+		if err70 != nil {
+			return 0, err70
 		}
 		i += n70
 	}
@@ -8363,9 +8363,9 @@ func (m *PipelineInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x2
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.HashtreeSpec.Size()))
-		n71, err := m.HashtreeSpec.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n71, err71 := m.HashtreeSpec.MarshalTo(dAtA[i:])
+		if err71 != nil {
+			return 0, err71
 		}
 		i += n71
 	}
@@ -8390,9 +8390,9 @@ func (m *PipelineInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x2
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Spout.Size()))
-		n72, err := m.Spout.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n72, err72 := m.Spout.MarshalTo(dAtA[i:])
+		if err72 != nil {
+			return 0, err72
 		}
 		i += n72
 	}
@@ -8454,9 +8454,9 @@ func (m *CreateJobRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x12
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Pipeline.Size()))
-		n73, err := m.Pipeline.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n73, err73 := m.Pipeline.MarshalTo(dAtA[i:])
+		if err73 != nil {
+			return 0, err73
 		}
 		i += n73
 	}
@@ -8466,9 +8466,9 @@ func (m *CreateJobRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.OutputCommit.Size()))
-		n74, err := m.OutputCommit.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n74, err74 := m.OutputCommit.MarshalTo(dAtA[i:])
+		if err74 != nil {
+			return 0, err74
 		}
 		i += n74
 	}
@@ -8497,9 +8497,9 @@ func (m *InspectJobRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Job.Size()))
-		n75, err := m.Job.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n75, err75 := m.Job.MarshalTo(dAtA[i:])
+		if err75 != nil {
+			return 0, err75
 		}
 		i += n75
 	}
@@ -8517,9 +8517,9 @@ func (m *InspectJobRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1a
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.OutputCommit.Size()))
-		n76, err := m.OutputCommit.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n76, err76 := m.OutputCommit.MarshalTo(dAtA[i:])
+		if err76 != nil {
+			return 0, err76
 		}
 		i += n76
 	}
@@ -8548,9 +8548,9 @@ func (m *ListJobRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Pipeline.Size()))
-		n77, err := m.Pipeline.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n77, err77 := m.Pipeline.MarshalTo(dAtA[i:])
+		if err77 != nil {
+			return 0, err77
 		}
 		i += n77
 	}
@@ -8570,9 +8570,9 @@ func (m *ListJobRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1a
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.OutputCommit.Size()))
-		n78, err := m.OutputCommit.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n78, err78 := m.OutputCommit.MarshalTo(dAtA[i:])
+		if err78 != nil {
+			return 0, err78
 		}
 		i += n78
 	}
@@ -8646,9 +8646,9 @@ func (m *DeleteJobRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Job.Size()))
-		n79, err := m.Job.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n79, err79 := m.Job.MarshalTo(dAtA[i:])
+		if err79 != nil {
+			return 0, err79
 		}
 		i += n79
 	}
@@ -8677,9 +8677,9 @@ func (m *StopJobRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Job.Size()))
-		n80, err := m.Job.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n80, err80 := m.Job.MarshalTo(dAtA[i:])
+		if err80 != nil {
+			return 0, err80
 		}
 		i += n80
 	}
@@ -8708,9 +8708,9 @@ func (m *GetLogsRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Job.Size()))
-		n81, err := m.Job.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n81, err81 := m.Job.MarshalTo(dAtA[i:])
+		if err81 != nil {
+			return 0, err81
 		}
 		i += n81
 	}
@@ -8718,9 +8718,9 @@ func (m *GetLogsRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x12
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Pipeline.Size()))
-		n82, err := m.Pipeline.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n82, err82 := m.Pipeline.MarshalTo(dAtA[i:])
+		if err82 != nil {
+			return 0, err82
 		}
 		i += n82
 	}
@@ -8753,9 +8753,9 @@ func (m *GetLogsRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x32
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Datum.Size()))
-		n83, err := m.Datum.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n83, err83 := m.Datum.MarshalTo(dAtA[i:])
+		if err83 != nil {
+			return 0, err83
 		}
 		i += n83
 	}
@@ -8823,9 +8823,9 @@ func (m *LogMessage) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x2a
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Ts.Size()))
-		n84, err := m.Ts.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n84, err84 := m.Ts.MarshalTo(dAtA[i:])
+		if err84 != nil {
+			return 0, err84
 		}
 		i += n84
 	}
@@ -8892,9 +8892,9 @@ func (m *RestartDatumRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Job.Size()))
-		n85, err := m.Job.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n85, err85 := m.Job.MarshalTo(dAtA[i:])
+		if err85 != nil {
+			return 0, err85
 		}
 		i += n85
 	}
@@ -8938,9 +8938,9 @@ func (m *InspectDatumRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Datum.Size()))
-		n86, err := m.Datum.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n86, err86 := m.Datum.MarshalTo(dAtA[i:])
+		if err86 != nil {
+			return 0, err86
 		}
 		i += n86
 	}
@@ -8969,9 +8969,9 @@ func (m *ListDatumRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Job.Size()))
-		n87, err := m.Job.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n87, err87 := m.Job.MarshalTo(dAtA[i:])
+		if err87 != nil {
+			return 0, err87
 		}
 		i += n87
 	}
@@ -9053,9 +9053,9 @@ func (m *ListDatumStreamResponse) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.DatumInfo.Size()))
-		n88, err := m.DatumInfo.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n88, err88 := m.DatumInfo.MarshalTo(dAtA[i:])
+		if err88 != nil {
+			return 0, err88
 		}
 		i += n88
 	}
@@ -9169,9 +9169,9 @@ func (m *CreatePipelineRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Pipeline.Size()))
-		n89, err := m.Pipeline.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n89, err89 := m.Pipeline.MarshalTo(dAtA[i:])
+		if err89 != nil {
+			return 0, err89
 		}
 		i += n89
 	}
@@ -9179,9 +9179,9 @@ func (m *CreatePipelineRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x12
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Transform.Size()))
-		n90, err := m.Transform.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n90, err90 := m.Transform.MarshalTo(dAtA[i:])
+		if err90 != nil {
+			return 0, err90
 		}
 		i += n90
 	}
@@ -9199,9 +9199,9 @@ func (m *CreatePipelineRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x3a
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.ParallelismSpec.Size()))
-		n91, err := m.ParallelismSpec.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n91, err91 := m.ParallelismSpec.MarshalTo(dAtA[i:])
+		if err91 != nil {
+			return 0, err91
 		}
 		i += n91
 	}
@@ -9209,9 +9209,9 @@ func (m *CreatePipelineRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x4a
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Egress.Size()))
-		n92, err := m.Egress.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n92, err92 := m.Egress.MarshalTo(dAtA[i:])
+		if err92 != nil {
+			return 0, err92
 		}
 		i += n92
 	}
@@ -9225,9 +9225,9 @@ func (m *CreatePipelineRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x5a
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.ScaleDownThreshold.Size()))
-		n93, err := m.ScaleDownThreshold.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n93, err93 := m.ScaleDownThreshold.MarshalTo(dAtA[i:])
+		if err93 != nil {
+			return 0, err93
 		}
 		i += n93
 	}
@@ -9235,9 +9235,9 @@ func (m *CreatePipelineRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x62
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.ResourceRequests.Size()))
-		n94, err := m.ResourceRequests.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n94, err94 := m.ResourceRequests.MarshalTo(dAtA[i:])
+		if err94 != nil {
+			return 0, err94
 		}
 		i += n94
 	}
@@ -9245,9 +9245,9 @@ func (m *CreatePipelineRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x6a
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Input.Size()))
-		n95, err := m.Input.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n95, err95 := m.Input.MarshalTo(dAtA[i:])
+		if err95 != nil {
+			return 0, err95
 		}
 		i += n95
 	}
@@ -9314,9 +9314,9 @@ func (m *CreatePipelineRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Service.Size()))
-		n96, err := m.Service.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n96, err96 := m.Service.MarshalTo(dAtA[i:])
+		if err96 != nil {
+			return 0, err96
 		}
 		i += n96
 	}
@@ -9326,9 +9326,9 @@ func (m *CreatePipelineRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.ResourceLimits.Size()))
-		n97, err := m.ResourceLimits.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n97, err97 := m.ResourceLimits.MarshalTo(dAtA[i:])
+		if err97 != nil {
+			return 0, err97
 		}
 		i += n97
 	}
@@ -9338,9 +9338,9 @@ func (m *CreatePipelineRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.ChunkSpec.Size()))
-		n98, err := m.ChunkSpec.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n98, err98 := m.ChunkSpec.MarshalTo(dAtA[i:])
+		if err98 != nil {
+			return 0, err98
 		}
 		i += n98
 	}
@@ -9350,9 +9350,9 @@ func (m *CreatePipelineRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.DatumTimeout.Size()))
-		n99, err := m.DatumTimeout.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n99, err99 := m.DatumTimeout.MarshalTo(dAtA[i:])
+		if err99 != nil {
+			return 0, err99
 		}
 		i += n99
 	}
@@ -9362,9 +9362,9 @@ func (m *CreatePipelineRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.JobTimeout.Size()))
-		n100, err := m.JobTimeout.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n100, err100 := m.JobTimeout.MarshalTo(dAtA[i:])
+		if err100 != nil {
+			return 0, err100
 		}
 		i += n100
 	}
@@ -9401,9 +9401,9 @@ func (m *CreatePipelineRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.SchedulingSpec.Size()))
-		n101, err := m.SchedulingSpec.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n101, err101 := m.SchedulingSpec.MarshalTo(dAtA[i:])
+		if err101 != nil {
+			return 0, err101
 		}
 		i += n101
 	}
@@ -9421,9 +9421,9 @@ func (m *CreatePipelineRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.HashtreeSpec.Size()))
-		n102, err := m.HashtreeSpec.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n102, err102 := m.HashtreeSpec.MarshalTo(dAtA[i:])
+		if err102 != nil {
+			return 0, err102
 		}
 		i += n102
 	}
@@ -9441,9 +9441,9 @@ func (m *CreatePipelineRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x2
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Spout.Size()))
-		n103, err := m.Spout.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n103, err103 := m.Spout.MarshalTo(dAtA[i:])
+		if err103 != nil {
+			return 0, err103
 		}
 		i += n103
 	}
@@ -9472,9 +9472,9 @@ func (m *InspectPipelineRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Pipeline.Size()))
-		n104, err := m.Pipeline.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n104, err104 := m.Pipeline.MarshalTo(dAtA[i:])
+		if err104 != nil {
+			return 0, err104
 		}
 		i += n104
 	}
@@ -9524,9 +9524,9 @@ func (m *DeletePipelineRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Pipeline.Size()))
-		n105, err := m.Pipeline.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n105, err105 := m.Pipeline.MarshalTo(dAtA[i:])
+		if err105 != nil {
+			return 0, err105
 		}
 		i += n105
 	}
@@ -9575,9 +9575,9 @@ func (m *StartPipelineRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Pipeline.Size()))
-		n106, err := m.Pipeline.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n106, err106 := m.Pipeline.MarshalTo(dAtA[i:])
+		if err106 != nil {
+			return 0, err106
 		}
 		i += n106
 	}
@@ -9606,9 +9606,9 @@ func (m *StopPipelineRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Pipeline.Size()))
-		n107, err := m.Pipeline.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n107, err107 := m.Pipeline.MarshalTo(dAtA[i:])
+		if err107 != nil {
+			return 0, err107
 		}
 		i += n107
 	}
@@ -9637,9 +9637,9 @@ func (m *RunPipelineRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPps(dAtA, i, uint64(m.Pipeline.Size()))
-		n108, err := m.Pipeline.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n108, err108 := m.Pipeline.MarshalTo(dAtA[i:])
+		if err108 != nil {
+			return 0, err108
 		}
 		i += n108
 	}

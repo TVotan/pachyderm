@@ -6518,9 +6518,9 @@ func (m *Branch) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Repo.Size()))
-		n1, err := m.Repo.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n1, err1 := m.Repo.MarshalTo(dAtA[i:])
+		if err1 != nil {
+			return 0, err1
 		}
 		i += n1
 	}
@@ -6561,9 +6561,9 @@ func (m *BranchInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x12
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Head.Size()))
-		n2, err := m.Head.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n2, err2 := m.Head.MarshalTo(dAtA[i:])
+		if err2 != nil {
+			return 0, err2
 		}
 		i += n2
 	}
@@ -6583,9 +6583,9 @@ func (m *BranchInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x22
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Branch.Size()))
-		n3, err := m.Branch.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n3, err3 := m.Branch.MarshalTo(dAtA[i:])
+		if err3 != nil {
+			return 0, err3
 		}
 		i += n3
 	}
@@ -6671,9 +6671,9 @@ func (m *File) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Commit.Size()))
-		n4, err := m.Commit.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n4, err4 := m.Commit.MarshalTo(dAtA[i:])
+		if err4 != nil {
+			return 0, err4
 		}
 		i += n4
 	}
@@ -6789,9 +6789,9 @@ func (m *RepoInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Repo.Size()))
-		n5, err := m.Repo.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n5, err5 := m.Repo.MarshalTo(dAtA[i:])
+		if err5 != nil {
+			return 0, err5
 		}
 		i += n5
 	}
@@ -6799,9 +6799,9 @@ func (m *RepoInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x12
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Created.Size()))
-		n6, err := m.Created.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n6, err6 := m.Created.MarshalTo(dAtA[i:])
+		if err6 != nil {
+			return 0, err6
 		}
 		i += n6
 	}
@@ -6820,9 +6820,9 @@ func (m *RepoInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x32
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.AuthInfo.Size()))
-		n7, err := m.AuthInfo.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n7, err7 := m.AuthInfo.MarshalTo(dAtA[i:])
+		if err7 != nil {
+			return 0, err7
 		}
 		i += n7
 	}
@@ -6889,9 +6889,9 @@ func (m *Commit) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Repo.Size()))
-		n8, err := m.Repo.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n8, err8 := m.Repo.MarshalTo(dAtA[i:])
+		if err8 != nil {
+			return 0, err8
 		}
 		i += n8
 	}
@@ -6926,9 +6926,9 @@ func (m *CommitRange) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Lower.Size()))
-		n9, err := m.Lower.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n9, err9 := m.Lower.MarshalTo(dAtA[i:])
+		if err9 != nil {
+			return 0, err9
 		}
 		i += n9
 	}
@@ -6936,9 +6936,9 @@ func (m *CommitRange) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x12
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Upper.Size()))
-		n10, err := m.Upper.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n10, err10 := m.Upper.MarshalTo(dAtA[i:])
+		if err10 != nil {
+			return 0, err10
 		}
 		i += n10
 	}
@@ -6967,9 +6967,9 @@ func (m *CommitProvenance) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Commit.Size()))
-		n11, err := m.Commit.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n11, err11 := m.Commit.MarshalTo(dAtA[i:])
+		if err11 != nil {
+			return 0, err11
 		}
 		i += n11
 	}
@@ -6977,9 +6977,9 @@ func (m *CommitProvenance) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x12
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Branch.Size()))
-		n12, err := m.Branch.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n12, err12 := m.Branch.MarshalTo(dAtA[i:])
+		if err12 != nil {
+			return 0, err12
 		}
 		i += n12
 	}
@@ -7008,9 +7008,9 @@ func (m *CommitInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Commit.Size()))
-		n13, err := m.Commit.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n13, err13 := m.Commit.MarshalTo(dAtA[i:])
+		if err13 != nil {
+			return 0, err13
 		}
 		i += n13
 	}
@@ -7018,9 +7018,9 @@ func (m *CommitInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x12
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.ParentCommit.Size()))
-		n14, err := m.ParentCommit.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n14, err14 := m.ParentCommit.MarshalTo(dAtA[i:])
+		if err14 != nil {
+			return 0, err14
 		}
 		i += n14
 	}
@@ -7028,9 +7028,9 @@ func (m *CommitInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1a
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Started.Size()))
-		n15, err := m.Started.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n15, err15 := m.Started.MarshalTo(dAtA[i:])
+		if err15 != nil {
+			return 0, err15
 		}
 		i += n15
 	}
@@ -7038,9 +7038,9 @@ func (m *CommitInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x22
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Finished.Size()))
-		n16, err := m.Finished.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n16, err16 := m.Finished.MarshalTo(dAtA[i:])
+		if err16 != nil {
+			return 0, err16
 		}
 		i += n16
 	}
@@ -7053,9 +7053,9 @@ func (m *CommitInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x3a
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Tree.Size()))
-		n17, err := m.Tree.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n17, err17 := m.Tree.MarshalTo(dAtA[i:])
+		if err17 != nil {
+			return 0, err17
 		}
 		i += n17
 	}
@@ -7110,9 +7110,9 @@ func (m *CommitInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x72
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Datums.Size()))
-		n18, err := m.Datums.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n18, err18 := m.Datums.MarshalTo(dAtA[i:])
+		if err18 != nil {
+			return 0, err18
 		}
 		i += n18
 	}
@@ -7120,9 +7120,9 @@ func (m *CommitInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x7a
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Branch.Size()))
-		n19, err := m.Branch.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n19, err19 := m.Branch.MarshalTo(dAtA[i:])
+		if err19 != nil {
+			return 0, err19
 		}
 		i += n19
 	}
@@ -7165,9 +7165,9 @@ func (m *FileInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.File.Size()))
-		n20, err := m.File.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n20, err20 := m.File.MarshalTo(dAtA[i:])
+		if err20 != nil {
+			return 0, err20
 		}
 		i += n20
 	}
@@ -7230,9 +7230,9 @@ func (m *FileInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x52
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Committed.Size()))
-		n21, err := m.Committed.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n21, err21 := m.Committed.MarshalTo(dAtA[i:])
+		if err21 != nil {
+			return 0, err21
 		}
 		i += n21
 	}
@@ -7292,9 +7292,9 @@ func (m *BlockRef) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Block.Size()))
-		n22, err := m.Block.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n22, err22 := m.Block.MarshalTo(dAtA[i:])
+		if err22 != nil {
+			return 0, err22
 		}
 		i += n22
 	}
@@ -7302,9 +7302,9 @@ func (m *BlockRef) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x12
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Range.Size()))
-		n23, err := m.Range.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n23, err23 := m.Range.MarshalTo(dAtA[i:])
+		if err23 != nil {
+			return 0, err23
 		}
 		i += n23
 	}
@@ -7333,9 +7333,9 @@ func (m *ObjectInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Object.Size()))
-		n24, err := m.Object.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n24, err24 := m.Object.MarshalTo(dAtA[i:])
+		if err24 != nil {
+			return 0, err24
 		}
 		i += n24
 	}
@@ -7343,9 +7343,9 @@ func (m *ObjectInfo) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x12
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.BlockRef.Size()))
-		n25, err := m.BlockRef.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n25, err25 := m.BlockRef.MarshalTo(dAtA[i:])
+		if err25 != nil {
+			return 0, err25
 		}
 		i += n25
 	}
@@ -7374,9 +7374,9 @@ func (m *CreateRepoRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Repo.Size()))
-		n26, err := m.Repo.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n26, err26 := m.Repo.MarshalTo(dAtA[i:])
+		if err26 != nil {
+			return 0, err26
 		}
 		i += n26
 	}
@@ -7421,9 +7421,9 @@ func (m *InspectRepoRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Repo.Size()))
-		n27, err := m.Repo.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n27, err27 := m.Repo.MarshalTo(dAtA[i:])
+		if err27 != nil {
+			return 0, err27
 		}
 		i += n27
 	}
@@ -7506,9 +7506,9 @@ func (m *DeleteRepoRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Repo.Size()))
-		n28, err := m.Repo.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n28, err28 := m.Repo.MarshalTo(dAtA[i:])
+		if err28 != nil {
+			return 0, err28
 		}
 		i += n28
 	}
@@ -7557,9 +7557,9 @@ func (m *StartCommitRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Parent.Size()))
-		n29, err := m.Parent.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n29, err29 := m.Parent.MarshalTo(dAtA[i:])
+		if err29 != nil {
+			return 0, err29
 		}
 		i += n29
 	}
@@ -7612,9 +7612,9 @@ func (m *BuildCommitRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Parent.Size()))
-		n30, err := m.Parent.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n30, err30 := m.Parent.MarshalTo(dAtA[i:])
+		if err30 != nil {
+			return 0, err30
 		}
 		i += n30
 	}
@@ -7622,9 +7622,9 @@ func (m *BuildCommitRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1a
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Tree.Size()))
-		n31, err := m.Tree.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n31, err31 := m.Tree.MarshalTo(dAtA[i:])
+		if err31 != nil {
+			return 0, err31
 		}
 		i += n31
 	}
@@ -7677,9 +7677,9 @@ func (m *FinishCommitRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Commit.Size()))
-		n32, err := m.Commit.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n32, err32 := m.Commit.MarshalTo(dAtA[i:])
+		if err32 != nil {
+			return 0, err32
 		}
 		i += n32
 	}
@@ -7693,9 +7693,9 @@ func (m *FinishCommitRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1a
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Tree.Size()))
-		n33, err := m.Tree.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n33, err33 := m.Tree.MarshalTo(dAtA[i:])
+		if err33 != nil {
+			return 0, err33
 		}
 		i += n33
 	}
@@ -7730,9 +7730,9 @@ func (m *FinishCommitRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x3a
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Datums.Size()))
-		n34, err := m.Datums.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n34, err34 := m.Datums.MarshalTo(dAtA[i:])
+		if err34 != nil {
+			return 0, err34
 		}
 		i += n34
 	}
@@ -7761,9 +7761,9 @@ func (m *InspectCommitRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Commit.Size()))
-		n35, err := m.Commit.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n35, err35 := m.Commit.MarshalTo(dAtA[i:])
+		if err35 != nil {
+			return 0, err35
 		}
 		i += n35
 	}
@@ -7797,9 +7797,9 @@ func (m *ListCommitRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Repo.Size()))
-		n36, err := m.Repo.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n36, err36 := m.Repo.MarshalTo(dAtA[i:])
+		if err36 != nil {
+			return 0, err36
 		}
 		i += n36
 	}
@@ -7807,9 +7807,9 @@ func (m *ListCommitRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x12
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.From.Size()))
-		n37, err := m.From.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n37, err37 := m.From.MarshalTo(dAtA[i:])
+		if err37 != nil {
+			return 0, err37
 		}
 		i += n37
 	}
@@ -7817,9 +7817,9 @@ func (m *ListCommitRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1a
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.To.Size()))
-		n38, err := m.To.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n38, err38 := m.To.MarshalTo(dAtA[i:])
+		if err38 != nil {
+			return 0, err38
 		}
 		i += n38
 	}
@@ -7886,9 +7886,9 @@ func (m *CreateBranchRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Head.Size()))
-		n39, err := m.Head.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n39, err39 := m.Head.MarshalTo(dAtA[i:])
+		if err39 != nil {
+			return 0, err39
 		}
 		i += n39
 	}
@@ -7902,9 +7902,9 @@ func (m *CreateBranchRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1a
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Branch.Size()))
-		n40, err := m.Branch.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n40, err40 := m.Branch.MarshalTo(dAtA[i:])
+		if err40 != nil {
+			return 0, err40
 		}
 		i += n40
 	}
@@ -7945,9 +7945,9 @@ func (m *InspectBranchRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Branch.Size()))
-		n41, err := m.Branch.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n41, err41 := m.Branch.MarshalTo(dAtA[i:])
+		if err41 != nil {
+			return 0, err41
 		}
 		i += n41
 	}
@@ -7976,9 +7976,9 @@ func (m *ListBranchRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Repo.Size()))
-		n42, err := m.Repo.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n42, err42 := m.Repo.MarshalTo(dAtA[i:])
+		if err42 != nil {
+			return 0, err42
 		}
 		i += n42
 	}
@@ -8007,9 +8007,9 @@ func (m *DeleteBranchRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Branch.Size()))
-		n43, err := m.Branch.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n43, err43 := m.Branch.MarshalTo(dAtA[i:])
+		if err43 != nil {
+			return 0, err43
 		}
 		i += n43
 	}
@@ -8048,9 +8048,9 @@ func (m *DeleteCommitRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Commit.Size()))
-		n44, err := m.Commit.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n44, err44 := m.Commit.MarshalTo(dAtA[i:])
+		if err44 != nil {
+			return 0, err44
 		}
 		i += n44
 	}
@@ -8124,9 +8124,9 @@ func (m *SubscribeCommitRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Repo.Size()))
-		n45, err := m.Repo.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n45, err45 := m.Repo.MarshalTo(dAtA[i:])
+		if err45 != nil {
+			return 0, err45
 		}
 		i += n45
 	}
@@ -8140,9 +8140,9 @@ func (m *SubscribeCommitRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1a
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.From.Size()))
-		n46, err := m.From.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n46, err46 := m.From.MarshalTo(dAtA[i:])
+		if err46 != nil {
+			return 0, err46
 		}
 		i += n46
 	}
@@ -8176,9 +8176,9 @@ func (m *GetFileRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.File.Size()))
-		n47, err := m.File.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n47, err47 := m.File.MarshalTo(dAtA[i:])
+		if err47 != nil {
+			return 0, err47
 		}
 		i += n47
 	}
@@ -8243,9 +8243,9 @@ func (m *PutFileRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.File.Size()))
-		n48, err := m.File.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n48, err48 := m.File.MarshalTo(dAtA[i:])
+		if err48 != nil {
+			return 0, err48
 		}
 		i += n48
 	}
@@ -8290,9 +8290,9 @@ func (m *PutFileRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x52
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.OverwriteIndex.Size()))
-		n49, err := m.OverwriteIndex.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n49, err49 := m.OverwriteIndex.MarshalTo(dAtA[i:])
+		if err49 != nil {
+			return 0, err49
 		}
 		i += n49
 	}
@@ -8337,9 +8337,9 @@ func (m *PutFileRecord) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1a
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.OverwriteIndex.Size()))
-		n50, err := m.OverwriteIndex.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n50, err50 := m.OverwriteIndex.MarshalTo(dAtA[i:])
+		if err50 != nil {
+			return 0, err50
 		}
 		i += n50
 	}
@@ -8400,9 +8400,9 @@ func (m *PutFileRecords) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x22
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Header.Size()))
-		n51, err := m.Header.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n51, err51 := m.Header.MarshalTo(dAtA[i:])
+		if err51 != nil {
+			return 0, err51
 		}
 		i += n51
 	}
@@ -8410,9 +8410,9 @@ func (m *PutFileRecords) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x2a
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Footer.Size()))
-		n52, err := m.Footer.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n52, err52 := m.Footer.MarshalTo(dAtA[i:])
+		if err52 != nil {
+			return 0, err52
 		}
 		i += n52
 	}
@@ -8441,9 +8441,9 @@ func (m *CopyFileRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Src.Size()))
-		n53, err := m.Src.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n53, err53 := m.Src.MarshalTo(dAtA[i:])
+		if err53 != nil {
+			return 0, err53
 		}
 		i += n53
 	}
@@ -8451,9 +8451,9 @@ func (m *CopyFileRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x12
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Dst.Size()))
-		n54, err := m.Dst.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n54, err54 := m.Dst.MarshalTo(dAtA[i:])
+		if err54 != nil {
+			return 0, err54
 		}
 		i += n54
 	}
@@ -8492,9 +8492,9 @@ func (m *InspectFileRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.File.Size()))
-		n55, err := m.File.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n55, err55 := m.File.MarshalTo(dAtA[i:])
+		if err55 != nil {
+			return 0, err55
 		}
 		i += n55
 	}
@@ -8523,9 +8523,9 @@ func (m *ListFileRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.File.Size()))
-		n56, err := m.File.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n56, err56 := m.File.MarshalTo(dAtA[i:])
+		if err56 != nil {
+			return 0, err56
 		}
 		i += n56
 	}
@@ -8569,9 +8569,9 @@ func (m *WalkFileRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.File.Size()))
-		n57, err := m.File.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n57, err57 := m.File.MarshalTo(dAtA[i:])
+		if err57 != nil {
+			return 0, err57
 		}
 		i += n57
 	}
@@ -8600,9 +8600,9 @@ func (m *GlobFileRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Commit.Size()))
-		n58, err := m.Commit.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n58, err58 := m.Commit.MarshalTo(dAtA[i:])
+		if err58 != nil {
+			return 0, err58
 		}
 		i += n58
 	}
@@ -8670,9 +8670,9 @@ func (m *DiffFileRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.NewFile.Size()))
-		n59, err := m.NewFile.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n59, err59 := m.NewFile.MarshalTo(dAtA[i:])
+		if err59 != nil {
+			return 0, err59
 		}
 		i += n59
 	}
@@ -8680,9 +8680,9 @@ func (m *DiffFileRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x12
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.OldFile.Size()))
-		n60, err := m.OldFile.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n60, err60 := m.OldFile.MarshalTo(dAtA[i:])
+		if err60 != nil {
+			return 0, err60
 		}
 		i += n60
 	}
@@ -8766,9 +8766,9 @@ func (m *DeleteFileRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.File.Size()))
-		n61, err := m.File.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n61, err61 := m.File.MarshalTo(dAtA[i:])
+		if err61 != nil {
+			return 0, err61
 		}
 		i += n61
 	}
@@ -8815,9 +8815,9 @@ func (m *PutObjectRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x1a
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Block.Size()))
-		n62, err := m.Block.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n62, err62 := m.Block.MarshalTo(dAtA[i:])
+		if err62 != nil {
+			return 0, err62
 		}
 		i += n62
 	}
@@ -8942,9 +8942,9 @@ func (m *TagObjectRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Object.Size()))
-		n63, err := m.Object.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n63, err63 := m.Object.MarshalTo(dAtA[i:])
+		if err63 != nil {
+			return 0, err63
 		}
 		i += n63
 	}
@@ -9043,9 +9043,9 @@ func (m *ListTagsResponse) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Tag.Size()))
-		n64, err := m.Tag.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n64, err64 := m.Tag.MarshalTo(dAtA[i:])
+		if err64 != nil {
+			return 0, err64
 		}
 		i += n64
 	}
@@ -9053,9 +9053,9 @@ func (m *ListTagsResponse) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0x12
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Object.Size()))
-		n65, err := m.Object.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n65, err65 := m.Object.MarshalTo(dAtA[i:])
+		if err65 != nil {
+			return 0, err65
 		}
 		i += n65
 	}
@@ -9192,9 +9192,9 @@ func (m *CheckObjectRequest) MarshalTo(dAtA []byte) (int, error) {
 		dAtA[i] = 0xa
 		i++
 		i = encodeVarintPfs(dAtA, i, uint64(m.Object.Size()))
-		n66, err := m.Object.MarshalTo(dAtA[i:])
-		if err != nil {
-			return 0, err
+		n66, err66 := m.Object.MarshalTo(dAtA[i:])
+		if err66 != nil {
+			return 0, err66
 		}
 		i += n66
 	}
@@ -9303,9 +9303,9 @@ func (m *ObjectIndex) MarshalTo(dAtA []byte) (int, error) {
 				dAtA[i] = 0x12
 				i++
 				i = encodeVarintPfs(dAtA, i, uint64(v.Size()))
-				n67, err := v.MarshalTo(dAtA[i:])
-				if err != nil {
-					return 0, err
+				n67, err67 := v.MarshalTo(dAtA[i:])
+				if err67 != nil {
+					return 0, err67
 				}
 				i += n67
 			}
@@ -9331,9 +9331,9 @@ func (m *ObjectIndex) MarshalTo(dAtA []byte) (int, error) {
 				dAtA[i] = 0x12
 				i++
 				i = encodeVarintPfs(dAtA, i, uint64(v.Size()))
-				n68, err := v.MarshalTo(dAtA[i:])
-				if err != nil {
-					return 0, err
+				n68, err68 := v.MarshalTo(dAtA[i:])
+				if err68 != nil {
+					return 0, err68
 				}
 				i += n68
 			}

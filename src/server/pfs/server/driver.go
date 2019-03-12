@@ -929,6 +929,7 @@ nextSubvBranch:
 		branchInfo.Head = newCommit
 		branchInfo.Name = branch.Name // set in case 'branch' is new
 		branchInfo.Branch = branch    // set in case 'branch' is new
+		newCommitInfo.OriginalBranch = branch
 		if err := branches.Put(branch.Name, branchInfo); err != nil {
 			return err
 		}
@@ -1077,7 +1078,9 @@ func (d *driver) resolveCommit(stm col.STM, userCommit *pfs.Commit) (*pfs.Commit
 		}
 		commit = commitInfo.ParentCommit
 	}
-	commitInfo.OriginalBranch = originalBranch
+	if commitInfo.OriginalBranch == nil {
+		commitInfo.OriginalBranch = originalBranch
+	}
 	userCommit.ID = commitInfo.Commit.ID
 	return commitInfo, nil
 }
